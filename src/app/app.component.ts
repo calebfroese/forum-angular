@@ -1,10 +1,38 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <div>
+      <ngx-datatable
+        class="material"
+        [rows]="rows"
+        [loadingIndicator]="loadingIndicator"
+        [columns]="columns"
+        [columnMode]="'force'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [rowHeight]="'auto'">
+      </ngx-datatable>
+    </div>
+  `
 })
 export class AppComponent {
-  title = 'app works!';
+  rows = [];
+  loadingIndicator: boolean = true;
+
+  columns = [{prop: 'name'}];
+
+  constructor() {
+    this.fetch((data) => {
+      this.rows = data;
+      setTimeout(() => {
+        this.loadingIndicator = false;
+      }, 200);
+    });
+  }
+
+  fetch(cb) {
+    cb([{name: 'Bob'}]);
+  }
 }
