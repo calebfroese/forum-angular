@@ -2,20 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div>
-      <ngx-datatable
-        class="material"
-        [rows]="rows"
-        [loadingIndicator]="loadingIndicator"
-        [columns]="columns"
-        [columnMode]="'force'"
-        [headerHeight]="50"
-        [footerHeight]="50"
-        [rowHeight]="'auto'">
-      </ngx-datatable>
-    </div>
-  `
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
   rows = [];

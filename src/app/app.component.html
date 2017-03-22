@@ -2,9 +2,15 @@
   {{title}}
 </h1>
 <button md-button>Hey</button>
-<ngx-datatable class="material"
-    [rows]="rows"
-    [headerHeight]="50"
-    [footerHeight]="50"
-    [rowHeight]="70">
-    </ngx-datatable>
+<div>
+      <ngx-datatable
+        class="material"
+        [rows]="rows"
+        [loadingIndicator]="loadingIndicator"
+        [columns]="columns"
+        [columnMode]="'force'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [rowHeight]="'auto'">
+      </ngx-datatable>
+    </div>
