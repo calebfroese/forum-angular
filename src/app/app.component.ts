@@ -21,6 +21,6 @@ export class AppComponent {
   }
 
   fetch(cb) {
-    cb([{name: 'Bob'}]);
+    cb([{name: 'John'}, {name: 'Bob'}, {name: 'Thomas'}]);
   }
 }
