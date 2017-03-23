@@ -1,0 +1,15 @@
+  .base {
+    flex-flow: column;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+  }

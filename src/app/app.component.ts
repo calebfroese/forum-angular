@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
 export class AppComponent {
   rows = [];
@@ -15,7 +16,7 @@ export class AppComponent {
       this.rows = data;
       setTimeout(() => {
         this.loadingIndicator = false;
-      }, 200);
+      }, 500);
     });
   }
 
