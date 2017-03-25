@@ -1,22 +1,15 @@
-  .base {
-    flex-flow: column;
-    height: auto;
-    justify-content: flex-start;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 20px;
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .search-container {
-      right: 0;
-  }
-  .user-icon {
-    max-width: 40px;
-    max-height: 40px;
-  }
+.base {
+  flex-flow: column;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}

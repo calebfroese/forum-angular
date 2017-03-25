@@ -11,19 +11,5 @@
 </md-tab-group>
 
 <div class="base">
-  <md-toolbar color="primary">
-    <button md-icon-button>
-      <md-icon>more_vert</md-icon>
-      </button>
-    <span>Users</span>
-  </md-toolbar>
-
-  <ngx-datatable class="material" [rows]="rows" [loadingIndicator]="loadingIndicator" [columns]="columns" [columnMode]="'force'"
-    [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'">
-  </ngx-datatable>
+  <posts-datatable></posts-datatable>
 </div>
-
-<!--Templates-->
-<template #image let-value="value">
-  <img [src]="value" class="user-icon">
-</template>

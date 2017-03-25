@@ -6,12 +6,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 
 import {AppComponent} from './app.component';
+import {PostsDatatableModule} from './shared/posts-datatable/posts-datatable.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule, FormsModule, HttpModule, MaterialModule, NgxDatatableModule,
-    MdIconModule
+    MdIconModule, PostsDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
