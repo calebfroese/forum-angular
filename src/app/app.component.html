@@ -22,3 +22,8 @@
     [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'">
   </ngx-datatable>
 </div>
+
+<!--Templates-->
+<template #image let-value="value">
+  <img [src]="value" class="user-icon">
+</template>
